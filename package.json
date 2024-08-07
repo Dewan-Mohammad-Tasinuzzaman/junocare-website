@@ -10,17 +10,20 @@
   },
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.47",
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-cookie": "^7.1.4",
     "accept-language": "^3.0.18",
     "i18next": "^23.11.2",
     "i18next-browser-languagedetector": "^7.2.1",
     "i18next-resources-to-backend": "^1.2.1",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-cookie": "^7.1.4",
+    "react-dom": "^18",
     "react-i18next": "^14.1.1",
     "react-player": "^2.16.0",
-    "react-scroll-parallax": "3.4.5"
+    "react-scroll-parallax": "3.4.5",
+    "sass": "^1.77.8",
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10"
   },
   "devDependencies": {
     "@types/node": "^20",
