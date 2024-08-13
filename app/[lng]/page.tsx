@@ -30,7 +30,7 @@ export default function Home({ params: { lng } }: HomePageProps) {
   return (
     <main className={styles.main}>
       
-      <div id="section-hero" className="hero">
+      <section id="section-hero" className="hero">
 
         {/* Main Contents */}
         <div className="hero__contents page-span-big">
@@ -57,7 +57,7 @@ export default function Home({ params: { lng } }: HomePageProps) {
               {
                 image: homeBannerImage,
                 speed: -70,
-                translateY: [0, 14],
+                translateY: [0, 25],
                 opacity: [1, 1],
                 scale: [1.05, 1, 'easeOutCubic'],
                 shouldAlwaysCompleteAnimation: true,
@@ -71,7 +71,13 @@ export default function Home({ params: { lng } }: HomePageProps) {
           <Image src={Custom_Separator_Corner} alt="" unoptimized={true} className="hero__separator-corner" />
           <div className="hero__separator-base"></div>
         </div>
-      </div>
+      </section>
+
+
+      {/* About */}
+      <section id="section-about" className="about">
+
+      </section>
 
     </main>
   );

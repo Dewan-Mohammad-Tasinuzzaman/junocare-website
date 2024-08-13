@@ -1,3 +1,5 @@
+// HOME PAGE
+
 @import '../variables';
 @import '../mixins';
 @import '../utils';
@@ -66,10 +68,11 @@
             justify-content: center;
 
             position: relative;
-            width: 32rem;
-            height: 32rem;
+            width: 34rem;
+            height: 34rem;
             border-radius: 50%;
             background-color: rgba(15, 15, 15, 0.6);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.20);
             backdrop-filter: blur(3px);
             transition: all .3s ease-out;
 
@@ -108,7 +111,7 @@
 
         &-corner {
             margin-left: auto;
-            width: 25rem;
+            width: 20rem;
             height: auto;
         }
         &-base {
@@ -117,4 +120,11 @@
             border-top-left-radius: 20rem;
         }
     }
+}
+
+
+
+
+.about {
+    padding: 50rem;
 }
