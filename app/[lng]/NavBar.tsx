@@ -6,9 +6,9 @@ import Link from 'next/link'
 import Image from 'next/image';
 import { useTranslation } from '../i18n/client';
 import { languages } from '../i18n/settings';
-import Logo from '@/public/svgs/juno_care_logo.svg';
-import Medical_Icon_Dark from '@/public/svgs/medical-icon-dark.svg';
-import Contacts_Icon_White from '@/public/svgs/contact-icon-white.svg';
+import Logo from '@/public/assets/svgs/juno_care_logo.svg';
+import Medical_Icon_Dark from '@/public/assets/svgs/medical-icon-dark.svg';
+import Contacts_Icon_White from '@/public/assets/svgs/contact-icon-white.svg';
 
 
 // Define the props type for the NavBar component
