@@ -1,0 +1,78 @@
+
+// NavBar
+.navbar {
+
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-white);
+    box-shadow: 0 4px 4rem rgba(0, 0, 0, 0.05);
+    border-radius: 100rem;
+    margin-top: 3rem;
+    padding: 1rem 1.5rem;
+    transition: all 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+
+    &__logobox {
+
+        position: relative;
+        background-color: var(--color-white);
+        box-shadow: 0 3px 1.5rem rgba(0, 0, 0, 0.05);
+        border-radius: 100rem;
+        padding: 1.5rem 3rem;
+
+        &_logo {
+            width: 18rem;
+            height: auto;
+        }
+    }
+
+    &__options {
+
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        &-option {
+
+        }
+
+        &_link {
+
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+
+            margin-right: 1rem;
+
+            &:hover {
+                .navbar__options_link-text {
+                    color: var(--color-primary);
+                }
+            }
+
+            &-icon {
+
+            }
+            &-text {
+                font-size: 1.9rem;
+                font-weight: 400;
+                color: var(--color-tertiary);
+                transition: all .3s ease-out;
+            }
+        }
+    }
+}
+
+
+
+// Active-Page-Styler
+.active-page-nav {
+    color: var(--color-black);
+}

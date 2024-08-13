@@ -1,0 +1,174 @@
+@import '../variables';
+@import '../mixins';
+@import '../utils';
+
+
+// Contacts-Button
+.btn-contacts {
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--color-primary);
+    box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.35), inset 4px -4px 8px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(0, 129, 199, 0.25);
+    padding: 0.6rem 0.6rem;
+    padding-right: 4rem;
+    border-radius: 100rem;
+    transform: scale(1) translateY(0);
+    transition: all .3s ease-out;
+
+    &:hover {
+        background-color: #0092db;
+        transform: scale(1.05) translateY(-2px);
+        .btn-contacts__iconcircle {
+            background-color: #007bbd;
+        }
+    }
+    &:active {
+        background-color: #0092db;
+        transform: scale(0.99) translateY(1px);
+        .btn-contacts__iconcircle {
+            background-color: #007bbd;
+        }
+    }
+
+    &__iconcircle {
+
+        position: relative;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 100rem;
+        background-color: #0071AC;
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.05);
+        transition: all .2s ease-out;
+
+        &_icon {
+            @include absolute-center;
+            width: 35%;
+            height: auto;
+        }
+    }
+    &__text {
+        color: var(--color-white);
+        font-weight: 400;
+    }
+}
+
+
+
+// Language-Switch-Button
+.langswitch {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    // @include respond(tablet) {
+    //     flex-direction: row-reverse;
+    // }
+
+    &:hover {
+
+        .langswitch__text {
+            display: inline-block;
+            position: absolute;
+            bottom: -160%;
+            right: 0;
+            background-color: var(--color-white);
+            padding: 2rem;
+            border-radius: 2px 2px 2px 2px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+            // @include respond(tablet) {
+            //     position: relative;
+            //     bottom: 0;
+            //     right: 0;
+            //     background-color: rgba(255, 255, 255, 0);
+            //     padding: 0;
+            //     border-radius: 0;
+            //     box-shadow: none;
+            // }
+        }
+    }
+
+    &__text {
+
+        display: none;
+        pointer-events: none;
+        text-wrap: nowrap;
+
+        // @include respond(tablet) {
+        //     display: inline-block;
+        // }
+
+        &--span {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+    &__btn {
+
+        position: relative;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        background-color: var(--color-white);
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        transition: all .3s ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: var(--color-tertiary);
+            box-shadow: inset -4px 4px 9px rgba(255, 255, 255, 0.4), inset 4px -4px 9px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.09);
+
+            .langswitch__btn_current {
+                color: var(--color-white);
+                top: -150%;
+            }
+            .langswitch__btn_link {
+                color: var(--color-white);
+                top: 50%;
+            }
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+
+        &_current {
+            @include absolute-center;
+            width: auto;
+            height: auto;
+            padding: 5rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: rgb(61, 61, 61);
+            transition: all .3s ease;
+
+            // @include respond(tablet) {
+            //     top: -150%;
+            // }
+        }
+        &_link {
+            @include absolute-center;
+            top: 150%;
+            width: auto;
+            height: auto;
+            padding: 5rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: rgb(61, 61, 61);
+            transition: all .3s ease;
+
+            // @include respond(tablet) {
+            //     top: 50%;
+            // }
+        }
+    }
+}

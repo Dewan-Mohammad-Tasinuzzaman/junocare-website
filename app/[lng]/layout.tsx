@@ -31,8 +31,8 @@ const lato = Lato({
 
 // META-TAGS
 export const metadata: Metadata = {
-  title: "Viva Allergy",
-  description: "Innovative change for a healthier tomorrow.",
+  title: "JunoCare",
+  description: "Advancing The Healthcare of Canadians",
 };
 
 
