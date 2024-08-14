@@ -64,6 +64,18 @@ html {
     @include respond(tablet) {
 
     }
+    @include respond(tablet-small-1) {
+
+    }
+    @include respond(phone) {
+
+    }
+    @include respond(phone-small-1) {
+
+    }
+    @include respond(phone-small-2) {
+        font-size: 52.5%;
+    }
 }
 
 

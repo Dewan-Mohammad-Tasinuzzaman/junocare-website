@@ -1,4 +1,28 @@
 {
-    "hero-header-span01": "Plus de ",
-    "hero-header-bold01": "65"
-  }
+  "hero-header": "Faire progresser les soins de santé des Canadiens",
+  "hero-description": "Bienvenue dans le programme de soutien aux patients de Juno Pharmaceuticals, qui s'engage à vous offrir des ressources et des conseils essentiels pour votre parcours de soins de santé.",
+  "keep-scrolling": "Défiler vers le bas",
+  "about-header-span01": "Programme de soutien aux patients",
+  "about-header-span02": " JunoCare",
+  "about-description-span01": "JunoCares est un programme de soutien aux patients conçu spécifiquement pour les personnes à qui un médicament spécialisé de Juno Pharmaceuticals a été prescrit. L'inscription est simple et peut être initiée par le professionnel de santé qui gère les soins du patient.",
+  "about-description-span02": "Les services d'assistance JunoCare sont adaptés à chaque médicament et comprennent :",
+  "about-feature01": "Navigation en matière de remboursement et aide financière.",
+  "about-feature02": "Matériel pédagogique pour comprendre vos médicaments.",
+  "about-feature03": "Services de pharmacie spécialisés.",
+  "about-feature04": "Un soutien continu pendant le traitement.",
+  "about-feature05": "Programme de soutien compatissant aux patients.",
+  "about-notice": "*Sous réserve des réglementations provinciales.",
+  "contact-us": "Contactez-nous",
+  "features-header-span01": "Services d'assistance",
+  "features-header-span02": " personnalisés",
+  "features-description": "Avec JunoCare, vous pouvez sélectionner des services et des ressources d'assistance personnalisés à chaque étape de votre parcours de traitement, notamment :",
+  "features-feature01": "Notre équipe dédiée, y compris votre Care Coach (infirmière), fournit une assistance en direct pour répondre à toutes vos questions sur le programme ou votre traitement.",
+  "features-feature02": "Une expertise en remboursement pour vous aider à naviguer et à obtenir une couverture pour votre plan de traitement.",
+  "features-feature03": "Notre équipe expérimentée est là pour garantir que vous ayez accès à vos médicaments le plus rapidement et le plus facilement possible.",
+  "features-feature04": "Accédez à un réseau fiable de cliniques de perfusion et d'injection, toutes dotées de professionnels de la santé qualifiés pour soutenir votre traitement.",
+  "features-feature05": "Des outils pratiques pour vous aider à gérer et naviguer efficacement dans votre plan de traitement.",
+  "contacts-header": "Inscription au programme de soutien aux patients JunoCare",
+  "contacts-description": "Les patients peuvent demander à leur médecin de les inscrire à JunoCare. Un prestataire de soins de santé peut inscrire son patient en soumettant un formulaire d'inscription dûment rempli par fax ou par courrier électronique.",
+  "contacts-availability": "Du lundi au vendredi (9h00 - 17h00) (EST)",
+  "enroll-a-patient": "Inscrire un patient"
+}

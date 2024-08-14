@@ -55,10 +55,10 @@ export default function Home({ params: { lng } }: HomePageProps) {
 
           <div className="hero__contents_intro">
             <Image src={Logo_Icon_White} alt="Logo Icon (Heart)" unoptimized={true} className="hero__contents_intro-logoicon" />
-            <h1 className="hero__contents_intro-header">Advancing The Healthcare of Canadians</h1>
-            <p className="hero__contents_intro-description">Welcome to Juno Pharmaceuticals&apos; Patient Support Program, where we are dedicated to providing you with the resources and support you need for your healthcare journey.</p>
+            <h1 className="hero__contents_intro-header">{t('hero-header')}</h1>
+            <p className="hero__contents_intro-description">{t('hero-description')}</p>
             <div className="hero__contents_intro-keep-scrolling keep-scrolling">
-              <div className="keep-scrolling__text">Keep Scrolling</div>
+              <div className="keep-scrolling__text">{t('keep-scrolling')}</div>
               <Image src={Down_Arrow_White} alt="Down Arrow" unoptimized={true} className="keep-scrolling__icon" />
             </div>
           </div>
@@ -97,45 +97,45 @@ export default function Home({ params: { lng } }: HomePageProps) {
         <div className="about__container page-margins-big">
           <Image src={About_Image} alt="About Image" unoptimized={true} className="about__image" />
           <div className="about__contents">
-            <h2 className="about__contents_header">JunoCare <span className="bold">Patient Support Program</span></h2>
+            <h2 className="about__contents_header">{t('about-header-span01')}<span className="bold">{t('about-header-span02')}</span></h2>
             <p className="about__contents_text">
-              JunoCares is a support program for patients who have been prescribed a Juno Pharmaceuticals specialty medication. Enrolling is easy and can be done by a healthcare professional involved in their care. <br/>
-              The JunoCare support services are customized for each medication, and include:
+              {t('about-description-span01')} <br/>
+              {t('about-description-span02')}
             </p>
             <div className="about__contents_points">
               <div className="about__contents_points-point">
                 <span className="about__contents_points-point--bullet"></span>
-                <p className="about__contents_points-point--text">Reimbursement navigation and financial assistance.</p>
+                <p className="about__contents_points-point--text">{t('about-feature01')}</p>
                 <span className="about__contents_points-point--bullet-end"></span>
               </div>
               <div className="about__contents_points-point">
                 <span className="about__contents_points-point--bullet"></span>
-                <p className="about__contents_points-point--text">Educational materials to understand your medication.</p>
+                <p className="about__contents_points-point--text">{t('about-feature02')}</p>
                 <span className="about__contents_points-point--bullet-end"></span>
               </div>
               <div className="about__contents_points-point">
                 <span className="about__contents_points-point--bullet"></span>
-                <p className="about__contents_points-point--text">Specialty pharmacy services.</p>
+                <p className="about__contents_points-point--text">{t('about-feature03')}</p>
                 <span className="about__contents_points-point--bullet-end"></span>
               </div>
               <div className="about__contents_points-point">
                 <span className="about__contents_points-point--bullet"></span>
-                <p className="about__contents_points-point--text">Ongoing support during treatment..</p>
+                <p className="about__contents_points-point--text">{t('about-feature04')}</p>
                 <span className="about__contents_points-point--bullet-end"></span>
               </div>
               <div className="about__contents_points-point">
                 <span className="about__contents_points-point--bullet"></span>
-                <p className="about__contents_points-point--text">Compassionate patient support program.</p>
+                <p className="about__contents_points-point--text">{t('about-feature05')}</p>
                 <span className="about__contents_points-point--bullet-end"></span>
               </div>
             </div>
-            <p className="about__contents_notice bold">*Subject to provincial regulations.</p>
+            <p className="about__contents_notice bold">{t('about-notice')}</p>
             <div className="about__contents_button">
               <Link className="btn-contacts" href={`/${lng}#section-contacts`}>
                 <div className="btn-contacts__iconcircle">
                   <Image src={Phone_Icon_White} alt="Contacts Icon" unoptimized={true} className="btn-contacts__iconcircle_icon" />
                 </div>
-                <p className="btn-contacts__text">Contact Us</p>
+                <p className="btn-contacts__text">{t('contact-us')}</p>
               </Link>
             </div>
           </div>
@@ -146,8 +146,8 @@ export default function Home({ params: { lng } }: HomePageProps) {
       {/* Features */}
       <section id="section-features" className="features page-margins-small">
         <Image src={Logo_Icon_Blue} alt="Features Illustration" unoptimized={true} className="features__illustration" />
-        <h2 className="features__header"><span className="bold">Personalized</span> Support Services</h2>
-        <p className="features__description">With JunoCare, you will choose your personalized support services and resources at every stage of your treatment journey, such as:</p>
+        <h2 className="features__header"><span className="bold">{t('features-header-span01')}</span>{t('features-header-span02')}</h2>
+        <p className="features__description">{t('features-description')}</p>
         
         <div className="features__container">
 
@@ -155,35 +155,35 @@ export default function Home({ params: { lng } }: HomePageProps) {
             <div className="features__container_feature-iconbox">
               <Image src={Live_Support_Icon_White} alt="Feature Icon" unoptimized={true} className="features__container_feature-iconbox--icon" />
             </div>
-            <p className="features__container_feature-description">Live support, available from our dedicated team and your Care Coach (nurse), for questions about the program or treatment.</p>
+            <p className="features__container_feature-description">{t('features-feature01')}</p>
           </div>
 
           <div className="features__container_feature">
             <div className="features__container_feature-iconbox">
               <Image src={Money_Icon_White} alt="Feature Icon" unoptimized={true} className="features__container_feature-iconbox--icon" />
             </div>
-            <p className="features__container_feature-description">Reimbursement expertise to help you find and secure coverage for your treatment plan.</p>
+            <p className="features__container_feature-description">{t('features-feature02')}</p>
           </div>
 
           <div className="features__container_feature">
             <div className="features__container_feature-iconbox">
               <Image src={Team_Icon_White} alt="Feature Icon" unoptimized={true} className="features__container_feature-iconbox--icon" />
             </div>
-            <p className="features__container_feature-description">Experienced team members to help you access your medication as quickly as possible.</p>
+            <p className="features__container_feature-description">{t('features-feature03')}</p>
           </div>
 
           <div className="features__container_feature">
             <div className="features__container_feature-iconbox">
               <Image src={Clinic_Icon_White} alt="Feature Icon" unoptimized={true} className="features__container_feature-iconbox--icon" />
             </div>
-            <p className="features__container_feature-description">Access to a reliable infusion/injection clinic network, staffed by qualified healthcare professionals.</p>
+            <p className="features__container_feature-description">{t('features-feature04')}</p>
           </div>
 
           <div className="features__container_feature">
             <div className="features__container_feature-iconbox">
               <Image src={Gear_Icon_White} alt="Feature Icon" unoptimized={true} className="features__container_feature-iconbox--icon" />
             </div>
-            <p className="features__container_feature-description">Practical tools to help you navigate your treatment plan.</p>
+            <p className="features__container_feature-description">{t('features-feature05')}</p>
           </div>
 
         </div>
@@ -194,8 +194,8 @@ export default function Home({ params: { lng } }: HomePageProps) {
       {/* Contacts */}
       <section id="section-contacts" className="contacts page-margins-big">
         <Image src={Logo} alt="Logo" unoptimized={true} className="contacts__logo" />
-        <h2 className="contacts__header bold">Enrolling into JunoCare Patient Support Program</h2>
-        <p className="contacts__description">Patients can ask their healthcare provider to enroll them in JunoCare. A healthcare provider can enroll their patient by submitting a completed enrollment form by fax or email.</p>
+        <h2 className="contacts__header bold">{t('contacts-header')}</h2>
+        <p className="contacts__description">{t('contacts-description')}</p>
         <div className="contacts__method">
           <Image src={Phone_Icon_Dark} alt="Phone Icon" unoptimized={true} className="contacts__method_icon" />
           <p className="contacts__method_text">1.437.339.3327</p>
@@ -204,13 +204,13 @@ export default function Home({ params: { lng } }: HomePageProps) {
           <Image src={Email_Icon_Dark} alt="Email Icon" unoptimized={true} className="contacts__method_icon" />
           <p className="contacts__method_text">junocare@junopharm.com</p>
         </div>
-        <p className="contacts__availability bold">Monday-Friday (9am - 5pm) (EST)</p>
+        <p className="contacts__availability bold">{t('contacts-availability')}</p>
         <div className="contacts__button">
           <Link className="btn-contacts-dark" href={`mailto:junocare@junopharm.com`}>
             <div className="btn-contacts-dark__iconcircle">
               <Image src={Medical_Icon_White} alt="Contacts Icon" unoptimized={true} className="btn-contacts-dark__iconcircle_icon" />
             </div>
-            <p className="btn-contacts-dark__text">Enroll A Patient</p>
+            <p className="btn-contacts-dark__text">{t('enroll-a-patient')}</p>
           </Link>
         </div>
       </section>

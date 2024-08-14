@@ -21,14 +21,16 @@
         background-color: #0092db;
         transform: scale(1.05) translateY(-2px);
         .btn-contacts__iconcircle {
-            background-color: #007bbd;
+            background-color: #119de9;
+            box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.2), inset 4px -4px 8px rgba(0, 0, 0, 0.10);
         }
     }
     &:active {
         background-color: #0092db;
         transform: scale(0.99) translateY(1px);
         .btn-contacts__iconcircle {
-            background-color: #007bbd;
+            background-color: #119de9;
+            box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.2), inset 4px -4px 8px rgba(0, 0, 0, 0.10);
         }
     }
 
@@ -51,6 +53,7 @@
     &__text {
         color: var(--color-white);
         font-weight: 400;
+        text-wrap: nowrap;
     }
 }
 
@@ -70,17 +73,22 @@
     transition: all .3s ease-out;
 
     &:hover {
+
         background-color: #0092db;
         transform: scale(1.05) translateY(-2px);
+        box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.30), inset 4px -4px 8px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(12, 25, 37, 0.15);
+
         .btn-contacts-dark__iconcircle {
-            background-color: #007bbd;
+            background-color: #119de9;
+            box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.2), inset 4px -4px 8px rgba(0, 0, 0, 0.10);
         }
     }
     &:active {
         background-color: #0092db;
         transform: scale(0.99) translateY(1px);
         .btn-contacts-dark__iconcircle {
-            background-color: #007bbd;
+            background-color: #119de9;
+            box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.2), inset 4px -4px 8px rgba(0, 0, 0, 0.10);
         }
     }
 
@@ -103,6 +111,7 @@
     &__text {
         color: var(--color-white);
         font-weight: 400;
+        text-wrap: nowrap;
     }
 }
 
@@ -139,6 +148,7 @@
     &__text {
         color: var(--color-white);
         font-weight: 400;
+        text-wrap: nowrap;
     }
     &__langs {
 
@@ -199,10 +209,6 @@
     align-items: center;
     gap: 2rem;
 
-    // @include respond(tablet) {
-    //     flex-direction: row-reverse;
-    // }
-
     &:hover {
 
         .langswitch__text {
@@ -215,15 +221,15 @@
             border-radius: 2px 2px 2px 2px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 
-            // @include respond(tablet) {
-            //     position: relative;
-            //     bottom: 0;
-            //     right: 0;
-            //     background-color: rgba(255, 255, 255, 0);
-            //     padding: 0;
-            //     border-radius: 0;
-            //     box-shadow: none;
-            // }
+            @include respond(tablet-small-1) {
+                position: relative;
+                bottom: 0;
+                right: 0;
+                background-color: rgba(255, 255, 255, 0);
+                padding: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
         }
     }
 
@@ -233,9 +239,9 @@
         pointer-events: none;
         text-wrap: nowrap;
 
-        // @include respond(tablet) {
-        //     display: inline-block;
-        // }
+        @include respond(tablet-small-1) {
+            display: inline-block;
+        }
 
         &--span {
             text-transform: uppercase;
@@ -284,9 +290,9 @@
             color: rgb(61, 61, 61);
             transition: all .3s ease;
 
-            // @include respond(tablet) {
-            //     top: -150%;
-            // }
+            @include respond(tablet-small-1) {
+                top: -150%;
+            }
         }
         &_link {
             @include absolute-center;
@@ -301,9 +307,9 @@
             color: rgb(61, 61, 61);
             transition: all .3s ease;
 
-            // @include respond(tablet) {
-            //     top: 50%;
-            // }
+            @include respond(tablet-small-1) {
+                top: 50%;
+            }
         }
     }
 }

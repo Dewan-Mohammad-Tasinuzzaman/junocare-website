@@ -35,14 +35,14 @@ export default function NorombyGuidePage({ params: { lng } }: NorombyGuidePagePr
     <main className='guide'>
       <div className="guide__information page-margins-big">
         <div className="guide__information_content">
-          <h2 className="guide__information_content-header">Information for <span className="bold">Health Care Professionals</span> on <span className="bold">Noromby®</span></h2>
-          <p className="guide__information_content-description">Download this helpful step-by-step guide for administration of Noromby®</p>
+          <h2 className="guide__information_content-header">{t('info-header-span01')}<span className="bold">{t('info-header-span02')}</span>{t('info-header-span03')}<span className="bold">{t('info-header-span04')}</span></h2>
+          <p className="guide__information_content-description">{t('info-description')}</p>
           <div className="guide__information_content-button">
             <div className="btn-download">
               <div className="btn-download__iconcircle">
                 <Image src={Download_Icon_White} alt="Contacts Icon" unoptimized={true} className="btn-download__iconcircle_icon" />
               </div>
-              <p className="btn-download__text">Download</p>
+              <p className="btn-download__text">{t('download')}</p>
               <div className="btn-download__langs">
                 <Link className="btn-download__langs_langbox" href={`/assets/files/Aid_Noromby_ENG_DIGITAL.pdf`} target="_blank">
                   <div className="btn-download__langs_langbox-inner">
@@ -63,8 +63,8 @@ export default function NorombyGuidePage({ params: { lng } }: NorombyGuidePagePr
 
       <div id='noromby-section-video' className="guide__instructions page-margins-big">
         <div className="guide__instructions_content">
-          <h2 className="guide__instructions_content-header">Patient Instructional Video</h2>
-          <p className="guide__instructions_content-description">View our patient instructional video to get clear directions for the self-administration of Noromby®.</p>
+          <h2 className="guide__instructions_content-header">{t('video-header')}</h2>
+          <p className="guide__instructions_content-description">{t('video-description')}</p>
         </div>
         <div className="guide__instructions_video-container">
           <div className="guide__instructions_video-container__videobox">

@@ -1,4 +1,8 @@
-
+@import './variables';
+@import './utils';
+@import './mixins';
+@import './animations';
+@import './media-query-manager';
 
 h1 {
 
@@ -9,6 +13,10 @@ h2 {
     font-weight: 400;
     line-height: 1.2;
     color: var(--color-tertiary);
+
+    @include respond(laptop) {
+        font-size: 3.8rem;
+    }
 }
 
 p {

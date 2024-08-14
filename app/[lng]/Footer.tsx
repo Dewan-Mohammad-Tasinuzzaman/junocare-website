@@ -31,23 +31,23 @@ export default function Footer({ params: { lng } }: FooterProps) {
                 <Image src={Juno_Logo_White} alt="Contacts Icon" unoptimized={true} className="footer__sec01_container-logo" />
                 <div className="footer__sec01_container-separator"></div>
                 <p className="footer__sec01_container-linker">
-                    Juno Pharmaceuticals
-                    <Link href="https://www.junopharm.ca/" target="_blank" className="footer__sec01_container-linker--link bold">Website</Link>
+                    {t('footer-website')}
+                    <Link href="https://www.junopharm.ca/" target="_blank" className="footer__sec01_container-linker--link bold">{t('footer-website-link')}</Link>
                 </p>
             </div>
         </div>
         <div className="footer__sec02">
             <div className="footer__sec02_container page-margins-big">
-                <Link href="/assets/files/DroitsHumainJunoFR.pdf" target="_blank" className="footer__sec02_container-link">Human Rights Statement of Compliance</Link>
+                <Link href="/assets/files/DroitsHumainJunoFR.pdf" target="_blank" className="footer__sec02_container-link">{t('footer-link01')}</Link>
                 <div className="footer__sec02_container-separator"></div>
-                <Link href={`/noromby-guide`} className="footer__sec02_container-link">Noromby Guide</Link>
+                <Link href={`/noromby-guide`} className="footer__sec02_container-link">{t('footer-link02')}</Link>
                 <div className="footer__sec02_container-separator"></div>
-                <Link href={`/${lng}#section-contacts`} className="footer__sec02_container-link">Contact Us</Link>
+                <Link href={`/${lng}#section-contacts`} className="footer__sec02_container-link">{t('footer-link03')}</Link>
             </div>
         </div>
         <div className="footer__sec03">
             <p className="footer__sec03_text page-margins-big">
-                ©{currentYear} JunoCare | All Rights Reserved
+                ©{currentYear} {t('footer-copyright')}
             </p>
         </div>
     </footer>

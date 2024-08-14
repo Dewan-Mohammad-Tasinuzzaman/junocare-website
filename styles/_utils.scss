@@ -2,6 +2,9 @@
 
 
 // BASIC USEFUL
+.display-none {
+    display: none;
+}
 .overflow-hidden {
     overflow: hidden;
 }
@@ -23,9 +26,31 @@
     @include respond(laptop) {
         margin: 0 12rem;
     }
+    @include respond(tablet-small-1) {
+        margin: 0 6rem;
+    }
+    @include respond(phone) {
+        margin: 0 4rem;
+    }
+    @include respond(phone-small-1) {
+        margin: 0 3rem;
+    }
 }
 .page-margins-small {
     margin: 0 16rem;
+
+    @include respond(laptop) {
+        margin: 0 10rem;
+    }
+    @include respond(tablet-small-1) {
+        margin: 0 6rem;
+    }
+    @include respond(phone) {
+        margin: 0 4rem;
+    }
+    @include respond(phone-small-1) {
+        margin: 0 3rem;
+    }
 }
 .marg-right-small {
     margin-right: 1rem;

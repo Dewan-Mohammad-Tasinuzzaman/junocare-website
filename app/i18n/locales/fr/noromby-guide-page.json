@@ -1,4 +1,10 @@
 {
-    "hero-header": "",
-    "hero-description": ""
-  }
+  "info-header-span01": "Informations pour les soins de",
+  "info-header-span02": " santé Professionnels",
+  "info-header-span03": " sur",
+  "info-header-span04": " Noromby®",
+  "info-description": "Téléchargez ce guide utile étape par étape pour l'administration de Noromby®",
+  "download": "Télécharger",
+  "video-header": "Vidéo d'instructions pour les patients",
+  "video-description": "Regardez notre vidéo d'instructions pour les patients pour obtenir des instructions claires pour l'auto-administration de Noromby®."
+}
