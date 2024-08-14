@@ -51,6 +51,7 @@
         }
     }
     &__text {
+        font-size: 1.8rem;
         color: var(--color-white);
         font-weight: 400;
         text-wrap: nowrap;
@@ -109,6 +110,7 @@
         }
     }
     &__text {
+        font-size: 1.8rem;
         color: var(--color-white);
         font-weight: 400;
         text-wrap: nowrap;
@@ -146,6 +148,7 @@
         }
     }
     &__text {
+        font-size: 1.8rem;
         color: var(--color-white);
         font-weight: 400;
         text-wrap: nowrap;
@@ -190,6 +193,7 @@
 
                 &--text {
                     @include absolute-center;
+                    font-size: 1.8rem;
                     font-weight: 600;
                     color: var(--color-tertiary);
                     transition: all .3s ease-out;
@@ -212,6 +216,7 @@
     &:hover {
 
         .langswitch__text {
+            font-size: 1.8rem;
             display: inline-block;
             position: absolute;
             bottom: -160%;
@@ -235,6 +240,7 @@
 
     &__text {
 
+        font-size: 1.8rem;
         display: none;
         pointer-events: none;
         text-wrap: nowrap;

@@ -174,16 +174,9 @@ export default function Home({ params: { lng } }: HomePageProps) {
 
           <div className="features__container_feature">
             <div className="features__container_feature-iconbox">
-              <Image src={Clinic_Icon_White} alt="Feature Icon" unoptimized={true} className="features__container_feature-iconbox--icon" />
-            </div>
-            <p className="features__container_feature-description">{t('features-feature04')}</p>
-          </div>
-
-          <div className="features__container_feature">
-            <div className="features__container_feature-iconbox">
               <Image src={Gear_Icon_White} alt="Feature Icon" unoptimized={true} className="features__container_feature-iconbox--icon" />
             </div>
-            <p className="features__container_feature-description">{t('features-feature05')}</p>
+            <p className="features__container_feature-description">{t('features-feature04')}</p>
           </div>
 
         </div>
@@ -198,7 +191,7 @@ export default function Home({ params: { lng } }: HomePageProps) {
         <p className="contacts__description">{t('contacts-description')}</p>
         <div className="contacts__method">
           <Image src={Phone_Icon_Dark} alt="Phone Icon" unoptimized={true} className="contacts__method_icon" />
-          <p className="contacts__method_text">1.437.339.3327</p>
+          <p className="contacts__method_text">1.905.829.3838 x 316</p>
         </div>
         <div className="contacts__method">
           <Image src={Email_Icon_Dark} alt="Email Icon" unoptimized={true} className="contacts__method_icon" />

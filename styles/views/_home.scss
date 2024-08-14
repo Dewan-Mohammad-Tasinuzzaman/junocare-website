@@ -81,7 +81,7 @@
                 }
             }
             &-description {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
                 font-weight: 400;
                 line-height: 1.5;
                 letter-spacing: 1px;
@@ -329,7 +329,7 @@
 
         margin-top: 2rem;
         display: grid;
-        grid-template-columns: repeat(5, 1fr); // Create 5 equal columns
+        grid-template-columns: repeat(4, 1fr); // Create 5 equal columns
         grid-gap: 2rem; // Gap between the grid items
         align-items: start;
 
