@@ -34,6 +34,10 @@
             flex-direction: column;
             gap: 2rem;
 
+            @include respond(tablet) {
+                width: 60%;
+            }
+
             &-logoicon {
                 width: 10rem;
                 height: auto;
@@ -77,6 +81,11 @@
             backdrop-filter: blur(3px);
             transition: all .3s ease-out;
 
+            @include respond(laptop-small-1) {
+                width: 25rem;
+                height: 25rem;
+            }
+
             &:hover {
 
                 background-color: #0085CA;
@@ -88,6 +97,10 @@
             &--icon {
                 width: 12rem;
                 height: auto;
+
+                @include respond(laptop-small-1) {
+                    width: 8rem;
+                }
             }
         }
     }
@@ -114,6 +127,10 @@
             margin-left: auto;
             width: 30rem;
             height: auto;
+
+            @include respond(laptop) {
+                width: 20rem;
+            }
         }
         &-base {
             height: 10rem;
@@ -136,12 +153,24 @@
         align-items: center;
         justify-content: center;
         gap: 10rem;
+
+        @include respond(laptop-small-2) {
+            flex-direction: column;
+        }
     }
     &__image {
         width: 52rem;
         height: auto;
+
+        @include respond(laptop) {
+            width: 48rem;
+        }
     }
     &__contents {
+
+        @include respond(laptop-small-2) {
+            text-align: center;
+        }
 
         &_header {
             
@@ -156,17 +185,45 @@
             flex-direction: column;
             gap: 1rem;
 
+
             &-point {
 
                 display: flex;
                 align-items: center;
                 gap: 2.5rem;
+
+                @include respond(laptop-small-2) {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
                 
                 &--bullet {
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
                     background-color: var(--color-tertiary);
+
+                    @include respond(laptop-small-2) {
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        opacity: 0.8;
+                    }
+                }
+                &--bullet-end {
+                    display: none;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: var(--color-tertiary);
+
+                    @include respond(laptop-small-2) {
+                        // display: inline-block;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        opacity: 0.8;
+                    }
                 }
                 &--text {
                     margin: 0;
@@ -204,15 +261,21 @@
 
     }
     &__description {
-
+        text-align: center;
     }
 
     &__container {
 
         margin-top: 2rem;
-        display: flex;
-        align-items: flex-start;
-        gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); // Create 5 equal columns
+        grid-gap: 2rem; // Gap between the grid items
+        align-items: start;
+
+        @include respond(laptop-small-2) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 4rem;
+        }
 
         &_feature {
 
@@ -256,14 +319,15 @@
     padding-top: 25rem;
 
     &__logo {
-        width: 38rem;
+        width: 34rem;
         height: auto;
     }
     &__header {
-
+        margin-top: 3rem;
+        text-align: center;
     }
     &__description {
-
+        text-align: center;
     }
 
     &__method {
@@ -282,7 +346,7 @@
     }
 
     &__availability {
-
+        text-align: center;
     }
 
     &__button {

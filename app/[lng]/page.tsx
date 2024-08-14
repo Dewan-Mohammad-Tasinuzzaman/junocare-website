@@ -63,7 +63,7 @@ export default function Home({ params: { lng } }: HomePageProps) {
             </div>
           </div>
 
-          <Link href="/noromby-guide" className="hero__contents_video-circle">
+          <Link href="/noromby-guide#noromby-section-video" className="hero__contents_video-circle">
             <Image src={Video_Icon_White} alt="Video Icon" unoptimized={true} className="hero__contents_video-circle--icon" />
           </Link>
 
@@ -106,22 +106,27 @@ export default function Home({ params: { lng } }: HomePageProps) {
               <div className="about__contents_points-point">
                 <span className="about__contents_points-point--bullet"></span>
                 <p className="about__contents_points-point--text">Reimbursement navigation and financial assistance.</p>
+                <span className="about__contents_points-point--bullet-end"></span>
               </div>
               <div className="about__contents_points-point">
                 <span className="about__contents_points-point--bullet"></span>
                 <p className="about__contents_points-point--text">Educational materials to understand your medication.</p>
+                <span className="about__contents_points-point--bullet-end"></span>
               </div>
               <div className="about__contents_points-point">
                 <span className="about__contents_points-point--bullet"></span>
                 <p className="about__contents_points-point--text">Specialty pharmacy services.</p>
+                <span className="about__contents_points-point--bullet-end"></span>
               </div>
               <div className="about__contents_points-point">
                 <span className="about__contents_points-point--bullet"></span>
                 <p className="about__contents_points-point--text">Ongoing support during treatment..</p>
+                <span className="about__contents_points-point--bullet-end"></span>
               </div>
               <div className="about__contents_points-point">
                 <span className="about__contents_points-point--bullet"></span>
                 <p className="about__contents_points-point--text">Compassionate patient support program.</p>
+                <span className="about__contents_points-point--bullet-end"></span>
               </div>
             </div>
             <p className="about__contents_notice bold">*Subject to provincial regulations.</p>

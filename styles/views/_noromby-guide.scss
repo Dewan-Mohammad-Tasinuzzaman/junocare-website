@@ -1,8 +1,14 @@
-
+@import '../variables';
+@import '../mixins';
+@import '../utils';
 
 .guide {
 
-    padding-top: 15rem;
+    padding-top: 20rem;
+
+    @include respond(tablet) {
+        padding-top: 18rem;
+    }
 
     &__information {
 
@@ -10,12 +16,22 @@
         align-items: center;
         gap: 5rem;
 
+        @include respond(tablet) {
+            flex-direction: column-reverse;
+        }
+
         &_content {
 
             width: 50%;
             display: flex;
             flex-direction: column;
-            gap: 3rem;
+            gap: 2rem;
+
+            @include respond(tablet) {
+                width: 100%;
+                text-align: center;
+                align-items: center;
+            }
 
             &-header {
                 
@@ -25,12 +41,144 @@
             }
             &-button {
                 display: inherit;
+                margin-top: 1rem;
             }
         }
 
         &_img {
             width: 60rem;
             height: auto;
+
+            @include respond(laptop-small-1) {
+                width: 50rem;
+            }
         }
     }
+
+
+    &__instructions {
+
+        padding-top: 10rem;
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+
+        @include respond(tablet) {
+            flex-direction: column-reverse;
+        }
+
+        &_content {
+
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            @include respond(tablet) {
+                width: 100%;
+                text-align: center;
+            }
+
+            &-header {
+                
+            }
+            &-description {
+
+            }
+        }
+
+        &_video-container {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            &__videobox {
+
+                margin-top: 4rem;
+                position: relative;
+                width: 64.4rem;
+                height: 36.4rem;
+                border-radius: 10px;
+                background-color: rgb(207, 207, 207);
+                background-image: url(/assets/images/video-thumbnail-cropped.PNG);
+                background-size: cover;
+                overflow: hidden;
+
+                @include respond(laptop-small-1) {
+                    width: 51.52rem;
+                    height: 29.12rem;
+                }
+
+                &_source {
+                    @include absolute-center;
+                }
+            }
+
+            &__langs {
+
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                background-color: var(--color-white);
+                border-radius: 100rem;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+
+                &_langbox {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 10rem;
+                    width: 10rem;
+                    border-radius: 100rem;
+                    background-color: var(--color-white);
+                    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.04);
+                    cursor: pointer;
+
+                    &:hover {
+
+                        .guide__instructions_video-container__langs_langbox-inner {
+                            background-color: var(--color-tertiary);
+                            box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.30), inset 4px -4px 8px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(12, 25, 37, 0.25);
+                        }
+                        .guide__instructions_video-container__langs_langbox-inner--text {
+                            color: var(--color-white);
+                        }
+                    }
+
+                    &-inner {
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 8rem;
+                        width: 8rem;
+                        border-radius: 100rem;
+                        background-color: var(--color-white);
+                        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.08);
+                        transition: all .3s ease-out;
+
+                        &--text {
+                            font-weight: 600;
+                            transition: all .3s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// HELPERS
+.active-video-lang-btn {
+    background-color: var(--color-tertiary);
+    box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.30), inset 4px -4px 8px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(12, 25, 37, 0.25);
+}
+.active-video-lang-text {
+    color: var(--color-white);
 }
