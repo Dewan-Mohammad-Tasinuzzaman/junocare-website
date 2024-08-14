@@ -10,6 +10,7 @@
     position: relative;
     height: 105vh;
     width: 100vw;
+    background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-tertiary));
     overflow: hidden;
 
     display: flex;
