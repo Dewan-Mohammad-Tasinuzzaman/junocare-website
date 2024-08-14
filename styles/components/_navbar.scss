@@ -40,7 +40,7 @@
         gap: 1.5rem;
 
         &-option {
-
+            
         }
 
         &_link {
@@ -61,7 +61,7 @@
 
             }
             &-text {
-                font-size: 1.9rem;
+                font-size: 1.8rem;
                 font-weight: 400;
                 color: var(--color-tertiary);
                 transition: all .3s ease-out;
@@ -74,5 +74,5 @@
 
 // Active-Page-Styler
 .active-page-nav {
-    color: var(--color-black);
+    font-weight: 600;
 }

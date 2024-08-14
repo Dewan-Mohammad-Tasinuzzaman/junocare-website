@@ -8,7 +8,7 @@
 .hero {
 
     position: relative;
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
     overflow: hidden;
 
@@ -32,21 +32,22 @@
             width: 50%;
             display: flex;
             flex-direction: column;
-            gap: 4rem;
+            gap: 2rem;
 
             &-logoicon {
-                width: 12rem;
+                width: 10rem;
                 height: auto;
                 opacity: 0.95;
             }
             &-header {
-                font-size: 5.2rem;
+                font-size: 4.4rem;
                 font-weight: 400;
                 color: var(--color-white);
                 text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+                margin-top: 0.8rem;
             }
             &-description {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
                 font-weight: 400;
                 line-height: 1.5;
                 letter-spacing: 1px;
@@ -55,7 +56,7 @@
                 text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
             }
             &-keep-scrolling {
-
+                margin-top: 1rem;
             }
         }
 
@@ -68,8 +69,8 @@
             justify-content: center;
 
             position: relative;
-            width: 34rem;
-            height: 34rem;
+            width: 30rem;
+            height: 30rem;
             border-radius: 50%;
             background-color: rgba(15, 15, 15, 0.6);
             box-shadow: 0 0 50px rgba(0, 0, 0, 0.20);
@@ -111,7 +112,7 @@
 
         &-corner {
             margin-left: auto;
-            width: 20rem;
+            width: 30rem;
             height: auto;
         }
         &-base {
@@ -126,5 +127,165 @@
 
 
 .about {
-    padding: 50rem;
+
+    position: relative;
+    margin-top: 15rem;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+    }
+    &__image {
+        width: 52rem;
+        height: auto;
+    }
+    &__contents {
+
+        &_header {
+            
+        }
+        &_text {
+            margin-top: 3rem;
+        }
+        &_points {
+
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            &-point {
+
+                display: flex;
+                align-items: center;
+                gap: 2.5rem;
+                
+                &--bullet {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: var(--color-tertiary);
+                }
+                &--text {
+                    margin: 0;
+                }
+            }
+        }
+        &_notice {
+            margin-top: 2.5rem;
+        }
+        &_button {
+
+            display: inline-block;
+            margin-top: 3rem;
+            // Contacts-Button
+        }
+    }
+}
+
+
+
+.features {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 25rem;
+
+    &__illustration {
+        width: 12rem;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+    &__header {
+
+    }
+    &__description {
+
+    }
+
+    &__container {
+
+        margin-top: 2rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+
+        &_feature {
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+
+            &-iconbox {
+
+                position: relative;
+                width: 16rem;
+                height: 16rem;
+                background-color: var(--color-tertiary);
+                border-radius: 50%;
+                box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.35), inset 4px -4px 8px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(12, 25, 37, 0.25);
+
+                &--icon {
+                    @include absolute-center;
+                    width: 40%;
+                    height: auto;
+                }
+            }
+            &-description {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+.contacts {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 25rem;
+
+    &__logo {
+        width: 38rem;
+        height: auto;
+    }
+    &__header {
+
+    }
+    &__description {
+
+    }
+
+    &__method {
+
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        &_icon {
+            width: 2.4rem;
+            height: auto;
+        }
+        &_text {
+
+        }
+    }
+
+    &__availability {
+
+    }
+
+    &__button {
+        display: inline-block;
+    }
 }

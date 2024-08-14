@@ -44,14 +44,18 @@ export default function NavBar({ params: { lng } }: NavBarProps) {
 
         {/* Options */}
         <div className="navbar__options">
-          <Link href={`/noromby-guide`} className='navbar__options-option'>
+          <Link href={`/${lng}`} className='navbar__options-option marg-right-small'>
             <div className="navbar__options_link">
-              <Image src={Medical_Icon_Dark} alt="Medical Icon" unoptimized={true} className="navbar__options_link-icon" />
+              <div className={`${`/${lng}` === currentPath ? 'active-page-nav' : ''} navbar__options_link-text`}>Home</div>
+            </div>
+          </Link>
+          <Link href={`/noromby-guide`} className='navbar__options-option marg-right-small'>
+            <div className="navbar__options_link">
               <div className={`${`/${lng}/noromby-guide` === currentPath ? 'active-page-nav' : ''} navbar__options_link-text`}>Noromby Guide</div>
             </div>
           </Link>
           <div className="navbar__options-option">
-            <Link className="btn-contacts" href={`#contacts`}>
+            <Link className="btn-contacts" href={`/${lng}#section-contacts`}>
               <div className="btn-contacts__iconcircle">
                 <Image src={Contacts_Icon_White} alt="Contacts Icon" unoptimized={true} className="btn-contacts__iconcircle_icon" />
               </div>

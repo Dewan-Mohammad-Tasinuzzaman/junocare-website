@@ -8,11 +8,11 @@
 
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.8rem;
     background-color: var(--color-primary);
     box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.35), inset 4px -4px 8px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(0, 129, 199, 0.25);
     padding: 0.6rem 0.6rem;
-    padding-right: 4rem;
+    padding-right: 5rem;
     border-radius: 100rem;
     transform: scale(1) translateY(0);
     transition: all .3s ease-out;
@@ -51,6 +51,141 @@
     &__text {
         color: var(--color-white);
         font-weight: 400;
+    }
+}
+
+
+// Contacts-Button-DARK
+.btn-contacts-dark {
+
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+    background-color: var(--color-tertiary);
+    box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.30), inset 4px -4px 8px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(12, 25, 37, 0.25);
+    padding: 0.6rem 0.6rem;
+    padding-right: 5rem;
+    border-radius: 100rem;
+    transform: scale(1) translateY(0);
+    transition: all .3s ease-out;
+
+    &:hover {
+        background-color: #0092db;
+        transform: scale(1.05) translateY(-2px);
+        .btn-contacts-dark__iconcircle {
+            background-color: #007bbd;
+        }
+    }
+    &:active {
+        background-color: #0092db;
+        transform: scale(0.99) translateY(1px);
+        .btn-contacts-dark__iconcircle {
+            background-color: #007bbd;
+        }
+    }
+
+    &__iconcircle {
+
+        position: relative;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 100rem;
+        background-color: #09121B;
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.15);
+        transition: all .2s ease-out;
+
+        &_icon {
+            @include absolute-center;
+            width: 35%;
+            height: auto;
+        }
+    }
+    &__text {
+        color: var(--color-white);
+        font-weight: 400;
+    }
+}
+
+
+// DOWNLOAD-Button
+.btn-download {
+
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+    background-color: var(--color-tertiary);
+    box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.30), inset 4px -4px 8px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(12, 25, 37, 0.25);
+    padding: 0.6rem 0.6rem;
+    border-radius: 100rem;
+    transform: scale(1) translateY(0);
+    transition: all .3s ease-out;
+
+    &__iconcircle {
+
+        position: relative;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 100rem;
+        background-color: #09121B;
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.15);
+        transition: all .2s ease-out;
+
+        &_icon {
+            @include absolute-center;
+            width: 35%;
+            height: auto;
+        }
+    }
+    &__text {
+        color: var(--color-white);
+        font-weight: 400;
+    }
+    &__langs {
+
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        &_langbox {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 100rem;
+            background-color: var(--color-tertiary);
+            box-shadow: inset -4px 4px 8px rgba(253, 253, 253, 0.30), inset 4px -4px 8px rgba(0, 0, 0, 0.10), 0 4px 8px rgba(12, 25, 37, 0.25);
+            overflow: hidden;
+
+            &:hover {
+
+                .btn-download__langs_langbox-inner {
+                    background-color: var(--color-secondary);
+                }
+                .btn-download__langs_langbox-inner--text {
+                    color: var(--color-white);
+                }
+            }
+
+            &-inner {
+
+                position: relative;
+                width: 7rem;
+                height: 7rem;
+                border-radius: 100rem;
+                background-color: var(--color-white);
+                box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+                transition: all .3s ease-out;
+
+                &--text {
+                    @include absolute-center;
+                    font-weight: 600;
+                    color: var(--color-tertiary);
+                    transition: all .3s ease-out;
+                }
+            }
+        }
     }
 }
 

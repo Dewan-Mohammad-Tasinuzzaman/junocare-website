@@ -7,7 +7,7 @@ import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import SmoothScroll from "@/components/SmoothScroll";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
-import Footer from "@/components/Footer";
+import Footer from "./Footer";
 import { dir } from 'i18next'
 import { languages } from '../i18n/settings'
 
@@ -58,6 +58,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
             {children}
           </SmoothScroll>
         </Providers>
+        <Footer params={{ lng }}/>
         <SpeedInsights />
         <Analytics />
       </body>
