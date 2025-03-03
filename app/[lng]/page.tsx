@@ -22,7 +22,7 @@ import Clinic_Icon_White from '@/public/assets/svgs/clinic_icon.svg';
 import Gear_Icon_White from '@/public/assets/svgs/gear_icon.svg';
 import Logo from '@/public/assets/svgs/juno_care_logo.svg';
 import Medical_Icon_White from '@/public/assets/svgs/medical-icon-white.svg';
-
+import Disclaimer_Icon from '@/public/assets/svgs/dsiclaimer_icon.svg';
 
 
 // Define the props type for the HomePage component
@@ -129,7 +129,6 @@ export default function Home({ params: { lng } }: HomePageProps) {
                 <span className="about__contents_points-point--bullet-end"></span>
               </div>
             </div>
-            <p className="about__contents_notice bold">{t('about-notice')}</p>
             <div className="about__contents_button">
               <Link className="btn-contacts" href={`/${lng}#section-contacts`}>
                 <div className="btn-contacts__iconcircle">
@@ -189,13 +188,13 @@ export default function Home({ params: { lng } }: HomePageProps) {
         <Image src={Logo} alt="Logo" unoptimized={true} className="contacts__logo" />
         <h2 className="contacts__header bold">{t('contacts-header')}</h2>
         <p className="contacts__description">{t('contacts-description')}</p>
-        <div className="contacts__method">
+        {/* <div className="contacts__method">
           <Image src={Phone_Icon_Dark} alt="Phone Icon" unoptimized={true} className="contacts__method_icon" />
           <p className="contacts__method_text">1.905.829.3838 x 316</p>
-        </div>
+        </div> */}
         <div className="contacts__method">
           <Image src={Email_Icon_Dark} alt="Email Icon" unoptimized={true} className="contacts__method_icon" />
-          <p className="contacts__method_text">junocare@junopharm.com</p>
+          <p className="contacts__method_text">junocare@junopharma.com</p>
         </div>
         <p className="contacts__availability bold">{t('contacts-availability')}</p>
         <div className="contacts__button">
@@ -206,6 +205,13 @@ export default function Home({ params: { lng } }: HomePageProps) {
             <p className="btn-contacts-dark__text">{t('enroll-a-patient')}</p>
           </Link>
         </div>
+      </section>
+
+      <section id="section-disclaimer" className="disclaimer page-margins-big">
+        <Image src={Disclaimer_Icon} alt="Disclaimer Icon" unoptimized={true} className="disclaimer__icon" />
+        <h2 className="disclaimer__header bold">{t('about-disclaimer')}</h2>
+        <p className="disclaimer__point bold">{t('about-disclaimer-notice01')}</p>
+        <p className="disclaimer__point bold">{t('about-disclaimer-notice02')}</p>
       </section>
 
     </main>

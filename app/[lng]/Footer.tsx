@@ -32,7 +32,7 @@ export default function Footer({ params: { lng } }: FooterProps) {
                 <div className="footer__sec01_container-separator"></div>
                 <p className="footer__sec01_container-linker">
                     {t('footer-website')}
-                    <Link href="https://www.junopharm.ca/" target="_blank" className="footer__sec01_container-linker--link bold">{t('footer-website-link')}</Link>
+                    <Link href="https://www.junopharma.com/" target="_blank" className="footer__sec01_container-linker--link bold">{t('footer-website-link')}</Link>
                 </p>
             </div>
         </div>

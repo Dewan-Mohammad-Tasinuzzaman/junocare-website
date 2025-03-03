@@ -291,9 +291,6 @@
                 }
             }
         }
-        &_notice {
-            margin-top: 2.5rem;
-        }
         &_button {
 
             display: inline-block;
@@ -432,5 +429,31 @@
 
     &__button {
         display: inline-block;
+    }
+}
+
+
+// Disclaimer
+.disclaimer {
+
+    padding-top: 20rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__icon {
+        margin-bottom: 2rem;
+        width: 12rem;
+        height: auto;
+    }
+
+    &__header {
+        margin-bottom: 2rem;
+    }
+
+    &__point {
+
     }
 }
