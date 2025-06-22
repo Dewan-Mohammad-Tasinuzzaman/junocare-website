@@ -86,7 +86,7 @@ export default function NavBar({ params: { lng } }: NavBarProps) {
               <div className={`${`/${lng}` === currentPath ? 'active-page-nav' : ''} navbar__options_link-text`}>{t('nav-link01')}</div>
             </div>
           </Link>
-          <Link href={`/noromby-guide`} onClick={closeMobileMenu} className='navbar__options-option marg-right-small'>
+          <Link href={`/${lng}/noromby-guide`} onClick={closeMobileMenu} className='navbar__options-option marg-right-small'>
             <div className="navbar__options_link">
               <div className={`${`/${lng}/noromby-guide` === currentPath ? 'active-page-nav' : ''} navbar__options_link-text`}>{t('nav-link02')}</div>
             </div>
