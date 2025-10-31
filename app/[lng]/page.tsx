@@ -42,7 +42,7 @@ export default function Home({ params: { lng } }: HomePageProps) {
 
   // Email Sending
   const handleEmailButtonClick = () => {
-    window.location.href = 'mailto:' + 'junocare@junopharm.com';
+    window.location.href = 'mailto:' + 'junocare@junopharma.com';
   };
 
   return (
@@ -194,11 +194,13 @@ export default function Home({ params: { lng } }: HomePageProps) {
         </div> */}
         <div className="contacts__method">
           <Image src={Email_Icon_Dark} alt="Email Icon" unoptimized={true} className="contacts__method_icon" />
-          <p className="contacts__method_text">junocare@junopharma.com</p>
+          <Link className="" href={`mailto:junocare@junopharma.com`}>
+            <p className="contacts__method_text">junocare@junopharma.com</p>
+          </Link>
         </div>
         <p className="contacts__availability bold">{t('contacts-availability')}</p>
         <div className="contacts__button">
-          <Link className="btn-contacts-dark" href={`mailto:junocare@junopharm.com`}>
+          <Link className="btn-contacts-dark" href={`mailto:junocare@junopharma.com`}>
             <div className="btn-contacts-dark__iconcircle">
               <Image src={Medical_Icon_White} alt="Contacts Icon" unoptimized={true} className="btn-contacts-dark__iconcircle_icon" />
             </div>
